@@ -4,10 +4,14 @@ import axios from 'axios';
 
 export const useCounterStore = defineStore('counter', () => {
 	const count = ref(0);
-	const doubleCount = computed(() => count.value * 2);
+	const doubleCount = computed(() => count.value * 2); //不知為何無法作用
 	function increment() {
 		count.value++;
 	}
+
+	const addCount = () => {
+		count.value += 2;
+	};
 
 	const dataList = reactive({});
 
@@ -20,5 +24,5 @@ export const useCounterStore = defineStore('counter', () => {
 		}
 	};
 
-	return { count, doubleCount, increment, dataAPI, dataList };
+	return { count, doubleCount, increment, dataAPI, dataList, addCount };
 });
