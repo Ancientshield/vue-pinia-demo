@@ -6,7 +6,7 @@
 	<div class="item">
 		<h1 style="color: white">{{ store.count }}</h1>
 		<pre style="color: white">
-      {{ store.dataList.value }}
+      {{ store.dataList[0] }}
     </pre>
 		<i>
 			<slot name="icon"></slot>
