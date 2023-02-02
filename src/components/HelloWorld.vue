@@ -11,7 +11,7 @@
 
 <template>
 	<div class="greetings">
-		<button @click="store.dataAPI">Click API</button>
+		<button @click="store.dataAPI">Axios API</button>
 		<h1 class="green">{{ msg }}</h1>
 		<h3>
 			You’ve successfully created a project with
