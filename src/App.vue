@@ -7,7 +7,7 @@
 
 <template>
 	<header>
-		<h1>{{ store.count }}</h1>
+		<h1 style="color: white">{{ store.count }}</h1>
 		<button @click="store.increment">Count++</button>
 		<button @click="store.addCount">Count+2</button>
 		<img

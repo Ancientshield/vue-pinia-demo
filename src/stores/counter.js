@@ -17,7 +17,9 @@ export const useCounterStore = defineStore('counter', () => {
 
 	const dataAPI = async () => {
 		try {
-			const res = await axios.get('https://bible.fhl.net/json/qb.php');
+			const res = await axios.get(
+				'https://bible.fhl.net/json/qb.php?chineses=%E5%89%B5&chap=1&sec=1'
+			);
 			dataList.value = res.data;
 		} catch (error) {
 			console.log(error);
